@@ -1,0 +1,63 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Zhimin Wang
+ * @Date: 2020-03-30 11:15:31
+ * @LastEditors: Zhimin Wang
+ * @LastEditTime: 2020-03-30 11:51:02
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <title>ECharts China Map</title>
+    <style>
+        #china-map {
+            width: 1000px;
+            height: 800px;
+            margin: auto;
+        }
+
+        #box {
+            display: none;
+            background-color: goldenrod;
+            width: 180px;
+            height: 30px;
+        }
+
+        #box-title {
+            display: block;
+        }
+
+        #backBtn {
+            display: none;
+        }
+
+        body {
+            margin: 0 auto;
+            overflow: hidden
+        }
+
+        .header img,
+        .header canvas {
+            position: absolute;
+            left: -999em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <canvas id="canvasBg" width="1000" height="800"></canvas>
+        <img src="./public/images/in_top_bj.jpg" alt="" id="canvasBgn">
+    </div>
+    <button id="backBtn"></button>
+    <div id="china-map"></div>
+
+    <script src="./public/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./public/js/echarts-4.4.0.min.js"></script>
+    <script type="text/javascript" src="./public/json/map/china.js"></script>
+    <script src="./public/js/star.js"></script>
+    <script src="./public/js/map.js"></script>
+</body>
+</html>
